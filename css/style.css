@@ -1,0 +1,387 @@
+/* Variables de paleta de colores */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;700&family=Ms+Madi&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+:root {
+  --color-roti: #c9a143;
+  --color-white: #ffffff;
+  --color-dark: #151515;
+  --color-text: #393535;
+  --color-pesto: #D6C73C;
+  --color-yelow: #eeee30;
+  --color-secundary: #ad9f18;
+  --color-shark: #343638;
+  --color-hue: #c9a14351;
+  --color-iron: #d1d3d5;
+  --color-fuscous: #5a514a;
+}
+/* /Variables de paleta de colores */
+
+/* Estilos generales */
+body {
+  font-family: "PT Sans", sans-serif;
+  color: var(--color-shark);
+}
+#nosotros,
+#ruta,
+#contact-us,
+#aventura {
+  padding: 40px 0;
+}
+section h2 {
+  text-transform: uppercase;
+}
+.primary-button {
+  background-color: var(--color-roti);
+  border-radius: 10px;
+  height: 45px;
+  max-width: 300px;
+  padding: 5px 15px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 18px;
+}
+.primary-button:hover {
+  background-color: var(--color-pesto);
+  border: 2px solid var(--color-secundary);
+  color: var(--color-shark);
+}
+.secondary-button {
+  background-color: var(--color-roti);
+  border: 2px solid var(--color-yelow);
+  color: var(--color-white);
+  border-radius: 15px;
+  width: 200px;
+  font-weight: 600;
+  min-width: 180px;
+  max-width: 300px;
+}
+.secondary-button:hover {
+  background-color: var(--color-yelow);
+  color: var(--color-shark);
+}
+/* Estilos generales */
+
+/* Estilos de header */
+.header-container {
+  background-image: radial-gradient(circle, var(--color-dark), transparent),
+    url(../images/peru.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+header #menu-principal a:hover {
+  background-color: #584a2259;
+  border: 1px solid #584a2236;
+  border-radius: 3px;
+}
+header .navbar {
+  background-color: #c9a24536;
+  text-shadow: 0 0 1px var(--color-dark);
+  color: var(--color-dark);
+}
+.menu-list {
+  display: flex;
+  justify-content: end;
+}
+.navbar-light .navbar-toggler {
+  color: #c9a14333;
+}
+.navbar-brand img {
+  width: 150px;
+}
+.info-header {
+  position: absolute;
+  width: 99%;
+  top: 35%;
+}
+/* /Estilos de header */
+
+/* Seccion nosotros */
+.card-img-color {
+  filter: sepia(90%) opacity(95%);
+}
+#nosotros span {
+  color: var(--color-roti);
+}
+#nosotros img {
+  border-top: 10px solid var(--color-roti);
+  width: 100%;
+  padding: 0 25%;
+}
+#nosotros img:hover {
+  filter: none;
+}
+/* /Seccion nosotros */
+
+/* Seccion tour */
+#ruta svg{
+  width: 25px;
+}
+.carousel-indicators {
+  position: relative;
+  top: 0px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--color-roti);
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.carousel-inner img, #follow img{
+  height: 400px;
+  object-fit: cover;
+}
+.slider-content {
+  position: absolute;
+  left: 5%;
+  border: 5px solid var(--color-roti);
+  margin: 0 auto;
+  width: 90%;
+  height: 85%;
+  background-color: transparent;
+}
+/* enlace y boton en la parte inferior de carousel */
+.info {
+  position: absolute;
+  width: 300px;
+  left: 65px;
+  bottom: 50px;
+}
+.carousel-item h5,
+.carousel-item p {
+  margin-left: 65px;
+  /* margin-left: 15%; */
+}
+.carousel-item p {
+  max-height: 230px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.carousel-inner a {
+  color: var(--color-roti);
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 10px;
+  display: block;
+}
+.carousel-caption {
+  position: static;
+}
+.carousel-control-prev {
+  top: 20%;
+  width: 40px;
+  left: -3%;
+}
+.carousel-control-next {
+  top: 20%;
+  width: 40px;
+  right: -3%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+}
+/* /Seccion tour */
+
+/* Seccion Contactanos */
+#contact-us {
+  background-color: var(--color-roti);
+}
+.form-check-input:checked {
+  background-color: var(--color-pesto);
+  border-color: var(--color-pesto);
+}
+/* /Seccion Contactanos */
+
+/* Seccion Aventura */
+#aventura img {
+  border-radius: 15px;
+}
+#aventura .card {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 18rem;
+  height: 20rem;
+  border: 20px;
+  margin: 20px;
+  box-shadow: 0 0 6px 4px var(--color-fuscous);
+}
+#aventura .card h5 {
+  background-color: #15151556;
+  border-radius: 5px;
+  padding: 3px;
+  color: var(--color-white);
+}
+#aventura .card p {
+  text-shadow: 2px 2px 4px black;
+  color: var(--color-white);
+}
+#aventura .card:nth-child(1) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/bosque-natural-el-canoncillo.jpg);
+}
+#aventura .card:nth-child(2) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/millpu.jpg);
+}
+#aventura .card:nth-child(3) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/pampachiri.jpg);
+}
+#aventura .card:nth-child(4) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/caserio-de-songos.jpg);
+}
+#aventura .card:nth-child(5) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/autisha.jpg);
+}
+#aventura .card:nth-child(6) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/marcona.jpg);
+}
+#aventura .card:nth-child(7) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/tambopata.jpg);
+}
+#aventura .card:nth-child(8) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/colca.jpeg);
+}
+#aventura .card:nth-child(9) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/sipan.webp);
+}
+#aventura .card:nth-child(10) {
+  background: linear-gradient(var(--color-shark), transparent),
+    url(../images/sauce.jpg);
+}
+/* /Seccion Aventura */
+
+/* Seccion Siguenos */
+#follow {
+  background-color: var(--color-shark);
+}
+#follow svg {
+  height: 25px;
+  margin: 0 8px;
+  fill: var(--color-iron);
+}
+#follow svg:hover {
+  fill: var(--color-roti);
+}
+#follow h2,
+#follow p {
+  color: var(--color-iron);
+  text-align: center;
+}
+/* Seccion Siguenos */
+
+/* Seccion pie de pagina */
+#aventura,
+footer {
+  background-color: var(--color-dark);
+}
+footer svg {
+  fill: red;
+  margin-top: 5px;
+}
+footer .nav-link,
+footer li {
+  color: var(--color-iron);
+  list-style-type: none;
+}
+footer .nav-link:hover {
+  color: var(--color-roti);
+}
+footer img{
+  width: 250px;
+}
+/* /Seccion pie de pagina */
+
+/* Breakpoint lg <1200  */
+@media (max-width: 1199px) {
+  .carousel-item h5,
+  .carousel-item p {
+    margin-left: 12%;
+  }
+  .info {
+    left: 6%;
+    bottom: 10%;
+  }
+  #aventura .card {
+    width: 15rem;
+    margin: 20px;
+  }
+}
+/* /Breakpoint lg <1200  */
+
+/* Breakpoint md <=991  */
+@media (max-width: 991px) {
+  header #menu-principal {
+    width: 100%;
+  }
+  header #menu-principal a {
+    padding-left: 10px;
+  }
+  .carousel-item h5,
+  .carousel-item p {
+    margin-left: 11%;
+  }
+  .info {
+    left: 9%;
+    bottom: 12%;
+  }
+  #aventura .card {
+    width: 15rem;
+  }
+}
+/* /Breakpoint md <=991  */
+
+/* Breakpoint sm <=767  */
+@media (max-width: 767px) {
+  .carousel-item h5,
+  .carousel-item p {
+    margin-left: 0; 
+  }
+  .carousel-item p {
+    overflow: visible;
+    max-height: 400px;
+  }
+  .info {
+    left: 10%;
+    bottom: 5%;
+  }
+  .slider-content {
+    left: 0;
+    width: 100%;
+    height: 94%;
+  }
+  .carousel-control-prev {
+    left: -9%;
+  }
+  .carousel-control-next {
+    right: -9%;
+  }
+  .carousel-inner a {
+    text-shadow: 0 0 8px var(--color-dark);
+    font-size: 20px;
+  }
+  .carousel-inner button {
+    box-shadow: 0 0 8px 1px var(--color-dark);
+    font-size: 20px;
+  }
+  #ruta svg{
+    width: 18px;
+  }
+  #nosotros img {
+    padding: 0 35%;
+  }
+  #aventura .card {
+    width: 18rem;
+  }
+}
+/* /Breakpoint sm <=767  */
